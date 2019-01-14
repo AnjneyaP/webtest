@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FormWizard_v1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="style.css" rel="stylesheet">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+        <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light/all.min.css" />
+        <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+			<nav class="navbar navbar-default navbar-static-top fixed-top">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle navbar-toggle-sidebar collapsed">
+							MENU
+							</button>
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">
+								Administrator
+							</a>
+						</div>
+				
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+							<form class="navbar-form navbar-left" method="GET" role="search">
+								<div class="form-group">
+									<input type="text" name="q" class="form-control" placeholder="Search">
+								</div>
+								<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="http://www.pingpong-labs.com" target="_blank">Visit Site</a></li>
+								<li class="dropdown ">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+										Account
+										<span class="caret"></span></a>
+										<ul class="dropdown-menu" role="menu">
+											<li class="dropdown-header">SETTINGS</li>
+											<li class=""><a href="#">Other Link</a></li>
+											<li class=""><a href="#">Other Link</a></li>
+											<li class=""><a href="#">Other Link</a></li>
+											<li class="divider"></li>
+											<li><a href="#">Logout</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
+					<div class="container-fluid main-container">
+							<div class="col-md-2 sidebar">
+								<div class="row">
+					  <!-- uncomment code for absolute positioning tweek see top comment in css -->
+					  <div class="absolute-wrapper"> </div>
+					  <!-- Menu -->
+					  <div class="side-menu">
+						  <nav class="navbar navbar-default" role="navigation">
+							  <!-- Main Menu -->
+							  <div class="side-menu-container">
+								  <ul class="nav navbar-nav">
+									  <li class="active"><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+									  <li><a href="report.html"><span class="glyphicon glyphicon-plane"></span> Reports</a></li>
+									  <li><a href="monitor.html"><span class="glyphicon glyphicon-cloud"></span> Monitor </a></li>
+				  
+				  
+								  </ul>
+							  </div><!-- /.navbar-collapse -->
+						  </nav>
+				  
+					  </div>
+				  </div>  		</div>
+							<div class="col-md-10 content">
+								  <div class="panel panel-default">
+					  <div class="panel-heading">
+						  Dashboard
+					  </div>
+					  <div class="panel-body">
+                            <div class="">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h3>Quarterly Sales</h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div id="performance1" style="height: 270px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h3>Quarterly Sales</h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div id="performance2" style="height: 270px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h3>Quarterly Sales</h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div id="performance3" style="height: 270px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>  
+                                </div>
+                                
+                                <!-- you need to include the shieldui css and js assets in order for the charts to work -->
+                              
+					  </div>
+				  </div>
+							</div>
+							<footer class="pull-left footer">
+								<p class="col-md-12">
+									<hr class="divider">
+									Copyright &COPY; 2015 <a href="http://www.pingpong-labs.com">Gravitano</a>
+								</p>
+							</footer>
+						</div>
+	
+<script>
+jQuery(function ($) {
+        var performance = [12, 3, 4, 2, 12, 3, 4, 17, 22, 34, 54, 67],
+            visits = [3, 9, 12, 14, 22, 32, 45, 12, 67, 45, 55, 7],
+            budget = [23, 19, 11, 134, 242, 352, 435, 22, 637, 445, 555, 57];
+
+        $("#performance1").shieldChart({
+            primaryHeader: {
+                text: "Quarterly Performance"
+            },
+            dataSeries: [{
+                seriesType: "area",
+                collectionAlias: "Q Data",
+                data: performance
+            }]
+        });
+
+        $("#performance2").shieldChart({
+            primaryHeader: {
+                text: "Visitors"
+            },
+                axisX: {
+                    categoricalValues: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+                },
+            dataSeries: [{
+                seriesType: "bar",
+                collectionAlias: "Visits",
+                data: visits
+            }]
+        });
+
+        $("#performance3").shieldChart({
+            primaryHeader: {
+                text: "Budget"
+            },
+            dataSeries: [{
+                seriesType: "line",
+                collectionAlias: "Budget",
+                data: budget
+            }]
+        });
+    });
+</script>
+		<script src="js/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light/all.min.css" />
+                                <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/main.js"></script>
+		<!-- Template created and distributed by Colorlib -->
+</body>
+</html>

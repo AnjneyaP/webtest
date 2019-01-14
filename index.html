@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FormWizard_v1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="style.css" rel="stylesheet">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+		<style type="text/css">
+	
+		</style>
+	</head>
+	<body>
+			<nav class="navbar navbar-default navbar-static-top fixed-top">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle navbar-toggle-sidebar collapsed">
+							MENU
+							</button>
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">
+								Administrator
+							</a>
+						</div>
+				
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+							<form class="navbar-form navbar-left" method="GET" role="search">
+								<div class="form-group">
+									<input type="text" name="q" class="form-control" placeholder="Search">
+								</div>
+								<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+							</form>
+							
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
+					<div class="container-fluid main-container">
+							<div class="col-md-2 sidebar">
+								<div class="row">
+					  <!-- uncomment code for absolute positioning tweek see top comment in css -->
+					  <div class="absolute-wrapper"> </div>
+					  <!-- Menu -->
+					  <div class="side-menu">
+						  <nav class="navbar navbar-default" role="navigation">
+							  <!-- Main Menu -->
+							  <div class="side-menu-container">
+								  <ul class="nav navbar-nav">
+										<li class="active"><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+										<li><a href="report.html"><span class="glyphicon glyphicon-plane"></span> Reports</a></li>
+										<li><a href="monitor.html"><span class="glyphicon glyphicon-cloud"></span> Monitor </a></li>
+					
+				  
+									  <!-- Dropdown-->
+									 
+				  
+								  </ul>
+							  </div><!-- /.navbar-collapse -->
+						  </nav>
+				  
+					  </div>
+				  </div>  		</div>
+							<div class="col-md-10 content">
+								  <div class="panel panel-default">
+					  <div class="panel-heading">
+						  Dashboard
+					  </div>
+					  <div class="panel-body">
+							<div class="wrapper">
+									<form action="" id="wizard">
+										<!-- SECTION 1 -->
+										<h2></h2>
+										<section>
+											<div class="inner">
+												<div class="image-holder">
+													<img src="images/form-wizard-1.jpg" alt="">
+												</div>
+												<div class="form-content" >
+													<div class="form-header">
+														<h3>Plan Your Ad Expense</h3>
+													</div>
+													<p>Please fill below details</p>
+
+													
+													<div class="form-row">
+														<div class="form-holder">
+																<div class="select">
+																		<div class="form-holder">
+																			<div class="select-control">Select Industry</div>
+																			<i class="zmdi zmdi-caret-down"></i>
+																		</div>
+																		<ul class="dropdown">
+																			<li rel="United 1">Finance</li>
+																			<li rel="United 2">Automobile</li>
+																			<li rel="Viet 4">Goods</li>
+																		</ul>
+																	</div>														</div>
+														<div class="form-holder">
+																<div class="select">
+																		<div class="form-holder">
+																			<div class="select-control">Select City</div>
+																			<i class="zmdi zmdi-caret-down"></i>
+																		</div>
+																		<ul class="dropdown">
+																			<li rel="Pune">United States</li>
+																			<li rel="Mumbai">United Kingdom</li>
+																			<li rel="Kolkatta">Viet Nam</li>
+																		</ul>
+																	</div>														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+															<input type="text" placeholder="Number Of Sites" class="form-control">
+														</div>
+														<div class="form-holder">
+																<div class="select">
+																		<div class="form-holder">
+																			<div class="select-control">Select Material Type</div>
+																			<i class="zmdi zmdi-caret-down"></i>
+																		</div>
+																		<ul class="dropdown">
+																			<li rel="Normal Flex">United States</li>
+																			<li rel="Black Flex">United Kingdom</li>
+																			<li rel="Normal BL Flex">Viet Nam</li>
+																		</ul>
+																	</div>															</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+																<div class="select">
+																		<div class="form-holder">
+																			<div class="select-control">Select Size Of Board</div>
+																			<i class="zmdi zmdi-caret-down"></i>
+																		</div>
+																		<ul class="dropdown">
+																			<li rel="4'*4' Small">United States</li>
+																			<li rel="8*12 Medium">8*12 Medium</li>
+																			<li rel="Viet Nam">24*26 Large</li>
+																		</ul>
+																	</div>																</div>
+														<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
+															<div class="checkbox-tick">
+																<label class="male">
+																	<input type="radio" name="gender" value="male" checked> Male<br>
+																	<span class="checkmark"></span>
+																</label>
+																<label class="female">
+																	<input type="radio" name="gender" value="female"> Female<br>
+																	<span class="checkmark"></span>
+																</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-row agegroup">
+																<div class="checkbox-tick margin-right">
+																	<label class="male">
+																		<input type="radio" name="gender" value="male" checked> Age < 15<br>
+																		<span class="checkmark"></span>
+																	</label>
+																	<label class="female">
+																		<input type="radio" name="gender" value="female"> Age < 15<br>
+																		<span class="checkmark"></span>
+																	</label>
+																</div>
+																<div class="checkbox-tick">
+																		<label class="male">
+																			<input type="radio" name="gender" value="male" checked> Age < 15<br>
+																			<span class="checkmark"></span>
+																		</label>
+																		<label class="female">
+																			<input type="radio" name="gender" value="female"> Age < 15<br>
+																			<span class="checkmark"></span>
+																		</label>
+																	</div>
+														</div>
+													
+												</div>
+											</div>
+										</section>
+						
+										<!-- SECTION 2 -->
+										<h2></h2>
+										<section>
+											<div class="inner">
+												<div class="image-holder">
+													<img src="images/form-wizard-2.jpg" alt="">
+												</div>
+												<div class="form-content">
+													<div class="form-header">
+														<h3>Registration</h3>
+													</div>
+													<p>Please fill with additional info</p>
+
+													<div class="row row-divided">
+												        <div class="col-xs-6 column-one">
+												           
+												            <p>6 column wide (col-xs-6)</p>
+												        </div>
+												      	<div class="vertical-divider">or</div>
+												    	<div class="col-xs-6 column-two">
+												        <input type="text" placeholder="Address" class="form-control">  
+												  	   </div>
+												    </div>
+													<!-- <div class="form-row">
+														<div class="form-holder w-100">
+															<input type="text" placeholder="Address" class="form-control">
+														</div>
+													</div>
+													<div class="form-row">
+														<div class="form-holder">
+															<input type="text" placeholder="City" class="form-control">
+														</div>
+														<div class="form-holder">
+															<input type="text" placeholder="Zip Code" class="form-control">
+														</div>
+													</div>
+						
+													<div class="form-row">
+														<div class="select">
+															<div class="form-holder">
+																<div class="select-control">Your country</div>
+																<i class="zmdi zmdi-caret-down"></i>
+															</div>
+															<ul class="dropdown">
+																<li rel="United States">United States</li>
+																<li rel="United Kingdom">United Kingdom</li>
+																<li rel="Viet Nam">Viet Nam</li>
+															</ul>
+														</div>
+														<div class="form-holder"></div>
+													</div> -->
+												</div>
+											</div>
+										</section>
+						
+										<!-- SECTION 3 -->
+										<h2></h2>
+										<section>
+											<div class="inner">
+												<div class="image-holder">
+													<img src="images/form-wizard-3.jpg" alt="">
+												</div>
+												<div class="form-content">
+													<div class="form-header">
+														<h3>Registration</h3>
+													</div>
+													<p>Send an optional message</p>
+													<div class="form-row">
+														<div class="form-holder w-100">
+															<textarea name="" id="" placeholder="Your messagere here!" class="form-control" style="height: 99px;"></textarea>
+														</div>
+													</div>
+													<div class="checkbox-circle mt-24">
+														<label>
+															<input type="checkbox" checked>  Please accept <a href="#">terms and conditions ?</a>
+															<span class="checkmark"></span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</section>
+									</form>
+								</div>
+					  </div>
+				  </div>
+							</div>
+							<footer class="pull-left footer">
+								<p class="col-md-12">
+									<hr class="divider">
+									Copyright &COPY; 2015 <a href="http://www.pingpong-labs.com">Gravitano</a>
+								</p>
+							</footer>
+						</div>
+	
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- JQUERY STEP -->
+		<script src="js/jquery.steps.js"></script>
+		<script src="js/main.js"></script>
+		<!-- Template created and distributed by Colorlib -->
+</body>
+</html>
